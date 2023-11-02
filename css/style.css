@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: minmax(70%, 100vh);
+}
+#nav-bar {
+    background-color: #090458;
+    color: white;
+    text-align: left;
+}
+#main-content {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
